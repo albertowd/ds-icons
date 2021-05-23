@@ -1,0 +1,9 @@
+version: "3.5"
+
+services:
+    ds-fetcher:
+        #command: sh -c "cd /ds-icons && sh fetch-ds-icons.sh ds"
+        command: sh -c "cd /ds-icons && sh fetch-ds-icons.sh 3ds"
+        image: alpine:latest
+        volumes:
+            - ./:/ds-icons
